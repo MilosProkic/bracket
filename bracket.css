@@ -1,0 +1,185 @@
+.scroll-container {
+	margin: 5rem 3rem 0 3rem;
+	display: grid;
+	grid-auto-flow: column;
+	max-width: fit-content;
+	height: calc(100vh - 15rem);
+	padding-right: 2rem;
+	
+	overflow-x: auto;
+	overflow-y: scroll;
+	align-items: center;
+}
+
+.round, .between-rounds {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.room-container {
+	width: fit-content;
+}
+
+.borders-0 {
+	border-bottom: var(--borders-width) solid;
+	border-right: var(--borders-width) solid;
+	border-image: linear-gradient(to top, var(--gray) 50%, transparent 50%) 1;
+}
+
+.borders-1 {
+	border-top: var(--borders-width) solid var(--gray);
+	border-bottom: var(--borders-width) solid var(--gray);
+	border-right: var(--borders-width) solid var(--gray);
+}
+
+.borders-2 {
+	border-top: var(--borders-width) solid var(--gray);
+}
+
+.borders-3 {
+	border-bottom: var(--borders-width) solid var(--gray);
+}
+
+.borders-4 {
+	border-top: var(--borders-width) solid var(--gray);
+	border-right: var(--borders-width) solid var(--gray);
+}
+
+.borders-5 {
+	border-bottom: var(--borders-width) solid var(--gray);
+	border-right: var(--borders-width) solid var(--gray);
+}
+
+.borders-6 {
+	border-right: var(--borders-width) solid var(--gray);
+}
+
+.room-name {
+	text-align: center;
+	font-size: 1.1rem;
+	padding: 0.1875rem 0;
+	color: var(--gray);
+}
+
+.empty-room .room-name {
+	color: rgb(0, 0, 0, 0);
+}
+
+.empty {
+	color: rgb(0, 0, 0, 0);
+}
+
+.room {
+	padding: 0.3125rem 0.1875rem 0.3125rem 0.625rem;
+	width: fit-content;
+	/*min-width: 14.175rem;*/
+	border: 1px solid var(--gray);
+	border-radius: 0.4375rem;
+	background-color: var(--white);
+}
+
+.pseudo-room {
+	padding: 0.3125rem 0.1875rem 0.3125rem 0.625rem;
+	width: 2rem;
+}
+
+.empty-room .room {
+	background-color: rgb(0, 0, 0, 0);
+	border: 1px solid rgb(0, 0, 0, 0);
+}
+
+.room:hover {
+	background-color: var(--light-gray);
+}
+
+.empty-room .room:hover {
+	background-color: rgb(0, 0, 0, 0);
+}
+
+.team {
+	width: fit-content;
+	min-width: max-content;
+}
+
+.team span {
+	display: inline-block;
+	font-size: 1.2rem;
+	vertical-align: middle;
+}
+
+.position {
+	width: 1.875rem;
+	text-align: center;
+	color: var(--gray);
+}
+
+.no-positions .position {
+	color: rgb(0, 0, 0, 0);
+}
+
+.name {
+	width: 11.5rem;
+	padding-left: 0.1875rem;
+	color: var(--dark-gray);
+	border-right: 1px solid var(--gray);
+}
+
+.empty-room .name {
+	color: rgb(0, 0, 0, 0);
+	border-right: 1px solid rgb(0, 0, 0, 0);
+}
+
+.position, .name {
+	padding-top: 0.15rem;
+	padding-bottom: 0.15rem;
+}
+
+.result {
+	text-align: center;
+	width: 0.625rem;
+	aspect-ratio: 1;
+	margin: 0 0.5rem;
+	border-radius: 50%;
+	border: 1px solid var(--gray);
+}
+
+.advancing {
+	background-color: var(--advancing-color);
+}
+
+.eliminated {
+	background-color: var(--eliminated-color);
+}
+
+.team .award {
+	width: 1rem;
+	font-size: 0.85rem;
+	/*font-family: "Champions Regular";*/
+}
+
+.gold {
+	color: var(--gold-dark);
+	background-color: var(--gold);
+	border: 2px solid var(--gold-dark);
+}
+
+.silver {
+	color: var(--silver-dark);
+	background-color: var(--silver);
+	border: 2px solid var(--silver-dark);
+}
+
+.bronze {
+	color: var(--bronze-dark);
+	background-color: var(--bronze);
+	border: 2px solid var(--bronze-dark);
+}
+
+.no-results .result{
+	background-color: var(--gray);
+}
+
+.no-result {
+	background-color: rgb(0, 0, 0, 0);
+	border: none;
+}

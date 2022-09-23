@@ -1,0 +1,98 @@
+:root {
+	--white: rgb(250, 250, 250);
+	--light-gray: rgb(240, 240, 240);
+	--gray: rgb(180, 180, 180);
+	--dark-gray: rgb(40, 40, 40);
+	--purple: rgb(113, 45, 134);
+	--advancing-color: rgb(0, 191, 138);
+	--eliminated-color: rgb(209, 24, 94);
+	--gold: rgb(244, 174, 18);
+	--gold-dark: rgb(181, 57, 0);
+	--silver: rgb(194, 196, 197);
+	--silver-dark: rgb(80, 81, 85);
+	--bronze: rgb(184, 87, 51);
+	--bronze-dark: rgb(81, 1, 0);
+	--1st-color: rgb(0, 191, 138);
+	--2nd-color: rgb(23, 162, 184);
+	--3rd-color: rgb(253, 104, 29);
+	--4th-color: rgb(209, 24, 94);
+	/*--open1-color: rgb(234, 67, 53);
+	--open2-color: rgba(246, 112, 112);
+	--esl-color: rgb(125, 255, 112);
+	--efl-color: rgb(251, 188, 4);*/
+	--open1-color: #ba181b;
+	--open2-color: #ff0054;
+	--esl-color: #00509d;
+	/*--efl-color: #ffb600;*/
+	--efl-color: #70e000;
+	
+	--borders-width: 1px;
+}
+
+@font-face {
+	font-family: "Champions Light";
+	src: url("fonts/Champions Light.ttf") format("ttf");
+	unicode-range: U+0020-007F;
+}
+
+@font-face {
+	font-family: "Champions Regular";
+	src: url("fonts/Champions Regular.ttf") format("ttf");
+	unicode-range: U+0020-007F;
+}
+
+@font-face {
+    font-family: 'Europa Title Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/europatitlebold.woff') format('woff');
+    }
+
+* {
+	/*box-sizing: border-box;*/
+	font-family: "Champions Light";
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: white;
+	padding: 4rem 0 0 0;
+}
+
+::-webkit-scrollbar {
+	width: 0.7rem;
+	height: 0.7rem;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--gray);
+	border-radius: 0.35rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: var(--purple);
+}
+
+header {
+	background-color: var(--purple);
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+
+a {
+	font-size: 2rem;
+	padding: 0.2rem 2.5%;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	background-color: rgb(255, 255, 255);
+	color: var(--purple);
+}

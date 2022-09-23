@@ -1,0 +1,178 @@
+.table-container {
+	margin: 5rem auto 0 auto;
+	padding-right: 2rem;
+	overflow-y: scroll;
+	height: calc(100vh - 15rem);
+	width: max-content;
+}
+
+.legend {
+	width: fit-content;
+	margin: 0 auto 2rem auto;
+	font-size: 1.2rem;
+	color: var(--dark-gray);
+}
+
+.legend-row {
+	text-align: left;
+}
+
+.legend-color, .legend-category {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.legend-color {
+	width: 0.6rem;
+	aspect-ratio: 1;
+	margin-right: 0.5rem;
+}
+
+.table {
+	width: max-content;
+	border-radius: 0.4rem;
+	border: 1px solid var(--gray);
+	margin: 0 auto;
+}
+
+.row {
+	background-color: var(--white);
+	width: fit-content;
+	border-bottom: 1px solid var(--gray);
+}
+
+.first-row {
+	border-top-left-radius: 0.4rem;
+	border-top-right-radius: 0.4rem;
+	border-bottom: 2.4px solid var(--gray);
+}
+
+.table .first-row:hover {
+	background-color: var(--white);
+}
+
+.row:last-child {
+	border-bottom-left-radius: 0.4rem;
+	border-bottom-right-radius: 0.4rem;
+	border: none;
+}
+
+.row:hover {
+	background-color: var(--light-gray);
+}
+
+.row > span {
+	font-size: 1.5rem;
+	color: var(--dark-gray);
+	display: inline-block;
+	padding: 0.5rem 0;
+	margin-right: 0.5rem;
+	vertical-align: middle;
+}
+
+.row > span:last-child {
+	margin-right: 0.9rem;
+}
+
+.row .ribbon {
+	width: 0.32rem;
+	color: rgba(0, 0, 0, 0);
+	margin-right: 0.48rem;
+}
+
+.open1-break {
+	background-color: var(--open1-color);
+}
+
+.open2-break {
+	background-color: var(--open2-color);
+}
+
+.esl-break {
+	background-color: var(--esl-color);
+}
+
+.efl-break {
+	background-color: var(--efl-color);
+}
+
+.rank {
+	width: 3rem;
+	text-align: center;
+}
+
+.team {
+	width: 15rem;
+	text-align: left;
+}
+ 
+.first-row .team {
+	text-align: center;
+}
+
+.eligible {
+	width: 6rem;
+	text-align: center;
+}
+
+.institution {
+	width: 13.5rem;
+	text-align: left;
+}
+
+.first-row .institution {
+	text-align: center;
+}
+
+.results {
+	width: 11rem;
+	text-align: center;
+}
+
+.result {
+	width: 0.625rem;
+	aspect-ratio: 1;
+	margin: 0 0.1rem;
+	border-radius: 50%;
+	border: 1px solid var(--gray);
+	display: inline-block;
+}
+
+.first {
+	background-color: var(--1st-color);
+}
+
+.second {
+	background-color: var(--2nd-color);
+}
+
+.third {
+	background-color: var(--3rd-color);
+}
+
+.fourth {
+	background-color: var(--4th-color);
+}
+
+.dnp {
+	background-color: var(--gray);
+}
+
+.no {
+	border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.points {
+	width: 2.5rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+.first-row > .points {
+	font-weight: normal;
+}
+
+.speakers {
+	width: 4rem;
+	text-align: center;
+}
